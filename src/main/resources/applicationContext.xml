@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://springframework.org/schemas/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://springframework.org/schema/beans/spring-beans.xsd">
+		
+	<bean id="rotuloDao" class="br.com.sunsystem.project_spring_desktop.dao.impl.RotuloImpl">
+	
+	</bean>
+	<bean id="properties" 
+		class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+		<property namw="locations">
+			<list>
+				<value>classpath:config.properties</value>
+			</list>
+		</property>
+	
+	</bean>
+	
+</beans>
